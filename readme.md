@@ -199,31 +199,25 @@ Nilai tertinggi adalah: 90
 Didapatkan oleh siswa ke-3
 
 NOMOR 5
-# Inisialisasi list harga
+# Kode ini digunakan untuk meminta input harga dari tiga barang, menyimpannya dalam sebuah list (harga_barang), lalu menjumlahkan harga-harga tersebut dan menampilkan total pembayaran.
 harga_barang = []
-
-# Input harga 3 barang menggunakan perulangan
-for i in range(3):
-    harga = float(input(f"Masukkan harga barang ke-{i+1}: ").replace('.', ''))  # Menghapus titik pemisah ribuan
-    harga_barang.append(harga)
-
-# Hitung total pembayaran
-total = sum(harga_barang)
-
-# Tampilkan total pembayaran
-print(f"Total pembayaran adalah: Rp{total:.2f}")
-
-
-nisialisasi list harga
-harga_barang = []
-
-# Input harga 3 barang menggunakan perulangan
+Membuat list kosong bernama harga_barang untuk menyimpan harga barang yang akan diinput oleh pengguna.Membuat list kosong bernama harga_barang untuk menyimpan harga barang yang akan diinput oleh pengguna.
+Membuat list kosong bernama harga_barang untuk menyimpan harga barang yang akan diinput oleh pengguna.
 for I in range(3):
-    harga = float(input(f"Masukkan harga barang ke-{I+1}: ").replace('.', ''))  # Menghapus titik pemisah ribuan
+    harga = float(input(f"Masukkan harga barang ke-{I+1}: ").replace('.', ''))
     harga_barang.append(harga)
+Menggunakan perulangan for untuk meminta pengguna memasukkan harga tiga barang (range(3) berarti perulangan terjadi sebanyak tiga kali).
 
-# Hitung total pembayaran
+Menggunakan input() untuk meminta pengguna memasukkan harga barang.
+
+Menggunakan .replace('.', '') untuk menghapus titik pemisah ribuan dari input harga sebelum dikonversi menjadi float. Catatan penting: Jika pengguna memasukkan angka desimal (misalnya 12.5), titiknya juga akan dihapus, yang bisa menyebabkan kesalahan dalam perhitungan.
+
+Menambahkan harga yang telah dikonversi ke dalam list harga_barang menggunakan .append(harga).
 total = sum(harga_barang)
+um(harga_barang) menjumlahkan seluruh elemen dalam list harga_barang untuk mendapatkan total pembayaran.
+Menampilkan hasil perhitungan total pembayaran dengan format Rupiah (Rp) dan dua angka di belakang koma (:.2f untuk format angka desimal dua digit
+Menangani Jumlah Barang Dinamis Saat ini, jumlah barang yang dihitung selalu tiga (range(3)). Agar lebih fleksibel, Anda bisa meminta pengguna memasukkan jumlah barang yang diinginkan.
+Menambahkan Validasi Input Jika pengguna memasukkan data yang salah (misalnya huruf atau simbol selain angka), kode bisa mengalami error. Sebaiknya tambahkan validasi agar hanya angka yang diterima
 
-# Tampilkan total pembayaran
-print(f"Total pembayaran adalah: Rp{total:.2f}"
+
+
