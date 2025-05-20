@@ -67,7 +67,7 @@ Contohnya:
 
 3! = 3 × 2 × 1 = 6
 
-🧭 Alur Program dan Penjelasannya
+Alur Program dan Penjelasannya
 Membuat fungsi faktorial
 
 python
@@ -104,7 +104,7 @@ Program mencetak hasil perhitungan faktorial dengan memanggil fungsi yang sudah 
 
 Hasilnya ditampilkan ke layar.
 
-💡 Kenapa pakai cara ini?
+ Kenapa pakai cara ini?
 Fungsi rekursif dipakai karena cara ini sangat cocok dan umum untuk menghitung faktorial. Pendek, rapi, dan mengikuti definisi matematika faktorial.
 
 Struktur if dalam fungsi memastikan bahwa program tahu kapan harus berhenti (kasus dasar: n == 0 atau n == 1).
@@ -127,7 +127,7 @@ Menentukan siapa yang memiliki nilai tertinggi
 
 Menampilkan nilai tertinggi dan posisi siswa yang mendapatkannya
 
-🧭 Alur Program dan Penjelasannya
+Alur Program dan Penjelasannya
 Inisialisasi list kosong
 
 python
@@ -177,7 +177,7 @@ print(f"Nilai tertinggi adalah: {nilai_tertinggi}")
 print(f"Didapatkan oleh siswa ke-{siswa_tertinggi}")
 Hasil akhir ditampilkan, berupa nilai tertinggi dan siswa ke berapa yang mendapat nilai tersebut.
 
-🔍 Kenapa cara ini digunakan?
+ Kenapa cara ini digunakan?
 List digunakan agar bisa menyimpan banyak data dengan rapi.
 
 Perulangan for memudahkan input banyak data tanpa menulis kode berulang.
@@ -199,3 +199,31 @@ Nilai tertinggi adalah: 90
 Didapatkan oleh siswa ke-3
 
 NOMOR 5
+# Inisialisasi list harga
+harga_barang = []
+
+# Input harga 3 barang menggunakan perulangan
+for i in range(3):
+    harga = float(input(f"Masukkan harga barang ke-{i+1}: ").replace('.', ''))  # Menghapus titik pemisah ribuan
+    harga_barang.append(harga)
+
+# Hitung total pembayaran
+total = sum(harga_barang)
+
+# Tampilkan total pembayaran
+print(f"Total pembayaran adalah: Rp{total:.2f}")
+
+
+nisialisasi list harga
+harga_barang = []
+
+# Input harga 3 barang menggunakan perulangan
+for I in range(3):
+    harga = float(input(f"Masukkan harga barang ke-{I+1}: ").replace('.', ''))  # Menghapus titik pemisah ribuan
+    harga_barang.append(harga)
+
+# Hitung total pembayaran
+total = sum(harga_barang)
+
+# Tampilkan total pembayaran
+print(f"Total pembayaran adalah: Rp{total:.2f}"
